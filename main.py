@@ -52,12 +52,12 @@ try:
     #     print(cursor.fetchone())
         
     # delete a table
-    with connection.cursor() as cursor:
-        cursor.execute(
-            """DROP TABLE users;"""
-        )
+    # with connection.cursor() as cursor:
+    #     cursor.execute(
+    #         """DROP TABLE users;"""
+    #     )
         
-        print("[INFO] Table was deleted")
+    #     print("[INFO] Table was deleted")
     
 except Exception as _ex:
     print("[INFO] Error while working with PostgreSQL", _ex)
